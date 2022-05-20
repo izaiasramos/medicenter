@@ -1,0 +1,212 @@
+* {
+  font-family: arial;
+}
+body {
+ margin:0;
+ padding:0;
+}
+
+/*    cabeçalho:
+ - display:flex; - para ter a disposição flex.
+ - justify-content:center; - para deixar o cabeçalho no meio/centro da tela.
+*/
+header{
+display:flex;
+justify-content:center;
+height:120px;
+}
+
+
+/*   container:
+ - largura padrao do conteudo do site 990px
+ - display:flex; - para deixar o conteudo do cabeçalho alinhados um ao lado do outro.
+ - justify-content: space-between; - separando o conteudo do cabeçalho,o Logo vai para inicio do cabeçalho, e o Menu vai para o fim.
+*/
+.container {
+  
+width: 990px;
+
+display:flex;
+justify-content: space-between;
+}
+
+/* 
+ - align-items: center; - esta definindo a centralização do logo em coluna.
+*/
+.logo {
+  display:flex;
+  align-items: center;
+}
+
+/* 
+ - align-items: center; - esta definindo a centralização do menu em coluna.
+*/
+.menu {
+ 
+  display:flex;
+  align-items: center;
+  
+}
+
+
+/* 
+ - list-style: none;  - chamamos a ul e a li e tiramos os pontos que ficam por padrão em listas antes da palavra °lista tiramos com o list-style: none;
+ - tiramos o margin
+padding: 15px - se colocar o padding:15px estara definindo o espaçamento entre os botoes do menu.
+*/
+nav ul, 
+nav li {
+  list-style: none;
+  margin:0;
+  padding:0;
+}
+
+
+nav ul {
+  display:flex;
+ }
+
+
+
+/*
+ - display:block - para conseguir configurar o tamanho do espaço
+ - text-decoration:none; - para tirar o sublinhado que fica abaixo das palavras da lista do menu
+ - text-transform:uppercase; - vai garantir que as palavras ficarão em maiusculas mesmo que sejam alteradas pelo html para minuscula.
+ - padding: 15px; - esta definindo o espaçamento interno dos botões,deixando o quadrado azul em volta da palavra maior. 
+*/
+nav a {
+  display:block;
+ padding: 15px;
+  text-decoration:none;
+  text-transform:uppercase;
+  color: #727279;
+  
+ }
+
+
+/*
+aqui estou definindo configurações para quando o botão estiver selecionado nav .active a, ou quando passar o mouse em cima nav a:hover :
+ - background-color: #39aae1; - ao selecionar ou passar o mouse em cime o botão ficara com essa cor azul.
+ - color: #ffffff; -  a cor das palavras dentro dos botões ficarão brancas.
+*/
+nav .active a,
+ nav a:hover {
+  background-color: #39aae1;
+ color: #ffffff;
+  }
+
+
+/*
+ -  background-image:url('../image/banner.jpg') - é uma forma de inserir imagens com o css,nesse caso estamos inserindo o banner.
+ - background-position:center; - para centralizar o banner
+ - background-size:cover; - vai fazer com que a imagem creça em telas maiores e diminua quando em telas menores.
+*/
+#banner {
+  display:flex;
+  justify-content:center; 
+  background-image:url('../image/banner.jpg');
+  background-position:center;
+  background-size:cover;
+  height:670px;
+}
+
+/*
+.column - foi adicionado esse segundo nome para a class container que esta dentro do section para configurar o conteudo que ficara no banner em coluna,ou seja sera duas div uma a baixo da outra,como o container no css mais a cima esta em row ai para configurar em coluna somente o banner criamos esse segundo nome para esse container - class="container column" */
+.column {
+flex-direction:column;
+}
+
+/*  
+ - flex:1 - para que a div de cima responsavel pelo texto fique responsiva 
+ - display:flex - para ter a disposição flex
+ - flex-direction:column - para que fiquem as div uma a baixo da outra e não em linha ao lado.
+ - justify-content:center - para posicionar as div ou o conteudo delas mais ao centro do banner/container.
+*/
+.banner_texto{
+  flex:1;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+
+/* 
+ - text-shadow - esta definindo sombreamento do texto de 0px para o lado,1px para baixo e 0px de blur.
+ - margin e padding - foi zerado o margin e o padding tanto do h1 como do h2 para que fiquem mais proximos um do outro.
+ - width:300px - colocamos uma area fixa tanto para o h1 como para o h2 de 350px 
+*/
+.banner_texto h1 {
+  color: white;
+  font-size:70px;
+  text-shadow: 0px 1px 0px #555555;
+  margin:0;
+  padding:0;
+  max-width:350px;
+} 
+.banner_texto h2 {
+  color: white;
+  font-size: 21px;
+  text-shadow: 0px 1px 0px #555555;
+  margin:0;
+  padding:0;
+  max-width:350px;
+  margin-top:30px;
+}
+
+.banner_opcoes{
+  height:210px;
+  display:flex;
+}
+
+/*-  padding:20px; - para o conteudo nao encostar nas bordas da div. */
+.banner1,
+.banner2,
+.banner3 {
+  flex:1;
+  color:#ffffff;
+  padding:20px;
+}
+
+/* cores dos banners: */
+.banner1{
+  background-color: #39aae1;
+}
+.banner2{
+  background-color: #0079c7;
+}
+.banner3{
+  background-color: #2b4c99;
+}
+
+
+.banner_titulo {
+  font-size:21px;
+}
+
+.banner_desc {
+  font-size:13px;
+  margin-top:20px;
+  margin-bottom:20px;
+}
+  /*botoes no campo opçao:
+   display:inline-block; - o inline-block faz com que a borda por exemplo acompanhe o tamanho da palavra que esta dentro dela,assim não fica uma borda muito maior e com a palavra descentralizada. */
+.banner_opcoes a {
+  display:inline-block;
+  border: 1px solid #ffffff;
+  padding:5px;
+  color: white;
+  font-size:12px;
+  text-decoration:none;
+}
+.banner_horario{
+  display:flex;
+  font-size:13px;
+ justify-content: space-between;
+  padding:3px;
+  border-bottom:1px solid white;
+  
+}
+
+
+
+
+

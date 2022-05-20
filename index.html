@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width" user-scalable="0">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+  <!-- 
+  - para inserir a logo colocamos a tag "img" envolvida pela tag "a",assim a nossa logo fica clicável, normalmente para ir para o inicio da tela.
+  -->
+<body>
+   <header>
+       <div class="container">
+          <div class="logo">
+         <a href=""><img src="image/logo.png" /></a>
+          </div>
+          <div class="menu">
+              <nav>
+                 <ul>
+                   <li class="active"> <a href="">HOME</a></li>
+                   <li> <a href="">BLOG</a></li>
+                   <li> <a href=""">PAGES</a></li>
+                   <li> <a href="">DEPARTMENTS</a></li>
+                   <li> <a href="">TIMETABLE</a></li>
+                   <li> <a href="">GALERY</a></li>
+                    <li> <a href="">CONTACT</a></li>
+                 </ul> 
+              </nav>
+          </div>
+       </div>
+
+
+     <!--
+abaixo temos um container com duas div,uma responsavel pelos titulos e sub titulos que colocaremos no nosso banner que ficara acima e a outra pelas opcoes,a disposicao sera em coluna uma abaixo da outra,a div de baixo das opcoes tera um tamanho fixo de 210px,a de cima não tera tamanho fixo para que fique responsivo os textos,quanto menor for a tela menor ficara as letras,para isso usaremos o flex:1
+     -->
+</header> 
+  <section id="banner">
+    <div class="container column">
+         
+      <div class="banner_texto">
+         <h1>Top notch experience</h1>
+         <h2>Medicenter is a responsive template perfect for all screen sizes</h2>
+      </div>
+       
+      <div class="banner_opcoes">
+         <div class="banner1">
+            <div class="banner_titulo">Emergency case</div>
+            <div class="banner_desc">If you need a doctor urgently outside of medicenter openning hours, all emergency apointment number for emergency service. </div>
+            <a href="">Read more</a>
+         </div>
+         <div class="banner2">
+            <div class="banner_titulo">Doctors timetable</div>
+            <div class="banner_desc">Here at medicenter we have individual doctor's lists. Click read more bellow to see services and current timetable for our doctor's.</div>
+            <a href="">Read more</a>
+         </div>
+         <div class="banner3">
+                <div class="banner_titulo">Openning hours</div>
+                <div class="banner_horario"><p>Monday - Friday</p> <p>8:00 - 17:00</p></div> 
+                <div class="banner_horario"><p>Saturday</p> <p>9:30 - 17:30</p></div> 
+                <div class="banner_horario"><p>Sanday</p> <p>9:30 - 15:00</p></div> 
+         </div>
+      </div>
+          
+  </section>
+
+
+
+
+
+  
+  <script src="script.js"></script>
+</body>
+
+</html>
