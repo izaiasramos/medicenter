@@ -20,54 +20,308 @@
           <div class="menu">
               <nav>
                  <ul>
-                   <li class="active"> <a href="">HOME</a></li>
+                   <li class="active"> <a href="">INICIO</a></li>
                    <li> <a href="">BLOG</a></li>
-                   <li> <a href=""">PAGES</a></li>
-                   <li> <a href="">DEPARTMENTS</a></li>
-                   <li> <a href="">TIMETABLE</a></li>
-                   <li> <a href="">GALERY</a></li>
-                    <li> <a href="">CONTACT</a></li>
+                   <li> <a href=""">PÁGINAS</a></li>
+                   <li> <a href="">DEPARTAMENTOS</a></li>
+                   <li> <a href="">CALENDÁRIO</a></li>
+                   <li> <a href="">GALERIA</a></li>
+                    <li> <a href="">CONTATO</a></li>
                  </ul> 
               </nav>
           </div>
        </div>
+   </header> 
 
 
+  
      <!--
-abaixo temos um container com duas div,uma responsavel pelos titulos e sub titulos que colocaremos no nosso banner que ficara acima e a outra pelas opcoes,a disposicao sera em coluna uma abaixo da outra,a div de baixo das opcoes tera um tamanho fixo de 210px,a de cima não tera tamanho fixo para que fique responsivo os textos,quanto menor for a tela menor ficara as letras,para isso usaremos o flex:1
+abaixo temos um container com duas div,uma responsavel pelos titulos e sub titulos que colocaremos no nosso banner que ficara mais acima no banner, e a outra responsavel pelas opcoes,a disposicao sera em coluna uma abaixo da outra,a div de baixo das opcoes tera um tamanho fixo de 210px,a de cima não tera tamanho fixo para que fique responsivo os textos,quanto menor for a tela menor ficara as letras,para isso usaremos o flex:1
      -->
-</header> 
   <section id="banner">
     <div class="container column">
          
       <div class="banner_texto">
-         <h1>Top notch experience</h1>
-         <h2>Medicenter is a responsive template perfect for all screen sizes</h2>
+         <h1>Experiência de alto nível</h1>
+         <h2>Medicenter é um modelo responsivo perfeito para todos os tamanhos de tela</h2>
       </div>
        
-      <div class="banner_opcoes">
+       <div class="banner_opcoes">
          <div class="banner1">
-            <div class="banner_titulo">Emergency case</div>
-            <div class="banner_desc">If you need a doctor urgently outside of medicenter openning hours, all emergency apointment number for emergency service. </div>
-            <a href="">Read more</a>
+            <div class="banner_titulo">Caso de emergência</div>
+            <div class="banner_desc">Se você precisar de um médico com urgência fora do horário de funcionamento do medicenter, segue abaixo todos os números para atendimento de emergência.</div>
+            <a href="">Consulte mais informações</a>
          </div>
          <div class="banner2">
-            <div class="banner_titulo">Doctors timetable</div>
-            <div class="banner_desc">Here at medicenter we have individual doctor's lists. Click read more bellow to see services and current timetable for our doctor's.</div>
-            <a href="">Read more</a>
+            <div class="banner_titulo">Horário dos médicos</div>
+            <div class="banner_desc">Aqui no medicenter temos listas individuais de médicos. Clique e veja os serviços e horários atuais para nossos médicos.</div>
+            <a href="">Consulte mais informações</a>
          </div>
          <div class="banner3">
-                <div class="banner_titulo">Openning hours</div>
-                <div class="banner_horario"><p>Monday - Friday</p> <p>8:00 - 17:00</p></div> 
-                <div class="banner_horario"><p>Saturday</p> <p>9:30 - 17:30</p></div> 
-                <div class="banner_horario"><p>Sanday</p> <p>9:30 - 15:00</p></div> 
+                <div class="banner_titulo">Horário de funcionamento</div>
+                <div class="banner_horario"><p>Segunda-feira - Sexta-feira</p> <p>8:00 - 17:00</p></div> 
+                <div class="banner_horario"><p>Sábado</p> <p>9:30 - 17:30</p></div> 
+                <div class="banner_horario"><p>Domingo</p> <p>9:30 - 15:00</p></div> 
          </div>
       </div>
           
   </section>
 
+<!--    Abaixo teremos a estrutura do conteudo geral da pagina,lozalizada abaixo do banner e acima do rodapé,com 3 areas aprimeira fica a direita com as noticias,a seginda fica a direita com os departamentos,e a terceira area fica a baixo dos departamentos: -->
+<!--   a section e a aside funcionam na pratica como uma div,então temos 1 section geral, e dentro dela 1 div container, e dentro do container 1 section e 1 aside -->
+  <section id="geral">
+     <div class="container"> 
+        
+       <section>
+           <div class="area"> 
+                <div class="area_titulo"> 
+                    <div class="area_titulo_texto">Últimas notícias</div>
+                    <div class="area_titulo_barra"></div>
+                </div> 
+             
+                <div class="area_body flex">
+                    <article>
+                       <a href="">
+                         <div class="nova_data">
+                             <div class="nova_postagem">20 MAI 22</div>     
+                             <div class="nova_comentario">58</div>
+                         </div>
+                         <div class="nova_imagem">
+                              <img src="image/doutor2.png" />
+                         </div>
+                         <div class="nova_titulo">
+                            Atendimento de qualidade
+                         </div>
+                      <div class="nova_resumo">
+   Acreditamos que a forma com que atendemos nossos pacientes implica diretamente em sua saude,ja foi comprovado que o bom humor melhora quadros de pacientes mesmo com doenças muito graves e avançados,por isso estamos sempre empenhados a lhe oferecer o melhor atendimento sempre com bom humor.
+                      </div>
+                     </a>
+                    </article>
+                     <article>
+                     <a href="">
+                      <div class="nova_data">
+                          <div class="nova_postagem">22 MAI 22</div>     
+                          <div class="nova_comentario">52</div>
+                      </div>
+                      <div class="nova_imagem">
+                           <img src="image/doutora.jpg" />
+                      </div>
+                      <div class="nova_titulo">
+                        Empoderamento feminino, proficionais capacitadas
+                      </div>
+                      <div class="nova_resumo">
+ As mulheres tem a cada dia provado seu valor,apesar de já estar bem claro,a muitos anos elas vêem demonstrando que conseguem chegar aonde desejarem,ocupando grandes cargos de grande importância perante a sociedade,e a cada dia fazendo a diferença na vida das pessoas. 
+                      </div>
+                     </a>
+                   </article>
+                    <article>
+                     <a href="">
+                      <div class="nova_data">
+                          <div class="nova_postagem">23 MAI 22</div>     
+                          <div class="nova_comentario">42</div>
+                      </div>
+                      <div class="nova_imagem">
+                           <img src="image/doutora2.jpg" />
+                      </div>
+                      <div class="nova_titulo">
+                           Voce como se fosse de nossa própria familia
+                      </div>
+                      <div class="nova_resumo">
+  Sem perder o lado humano,cuidamos de cada paciente como se fosse da nossa propria familia,seu filho como se fosse o nosso,não encaramos o paciente apenas como mais um,mas com a atenção que voce e sua familia merecem.
+                      </div>
+                     </a>
+                   </article>
+                    
+                  <article>
+                     <a href="">
+                      <div class="nova_data">
+                          <div class="nova_postagem">24 MAI 22</div>     
+                          <div class="nova_comentario">29</div>
+                      </div>
+                      <div class="nova_imagem">
+                           <img src="image/pediatra.jpg" />
+                      </div>
+                      <div class="nova_titulo">
+                            Milagre de Deus
+                      </div>
+                      <div class="nova_resumo">
+   Tivemos hoje, uma grávida que chegou passando mal,rapidamente a atendemos e fizemos os procedimentos médicos específicos para esses casos,descobrimos que a gravidez era de alto risco,a chance de o bebê nascer vivo e com saúde era mínimo,mas um milagre aconteceu,e o que era quase impossível se tornou realidade para essa familia. 
+                      </div>
+                     </a>
+                   </article>
 
+                            
+                </div>
+           </div>   
+        </section>
+       
+<!--abaixo area lateral da direita com departamentos e abaixo area de marcar consulta: -->
+       <aside>
+           <div class="area_container"> 
+              <div class="area_titulo"> 
+                <div class="area_titulo_texto">Departamentos</div>
+                <div class="area_titulo_barra"></div>
+              </div>
+<!--somente ao adicionar FLEX na class da tag pai,as div interior ficarão em row,em linha,muito util pois sem isso eu não estava conseguindo colocar os quadrados em linha,estavam ficando somente em colunas um abaixo do outro: -->
+                <div class="area_body flex">
+                   <div class="area_departamentos"></div>
+                   <div class="area_departamentos"></div>
+                   <div class="area_departamentos"></div>
+                   <div class="area_departamentos"></div>
+                   <div class="area_departamentos"></div>
+                   <div class="area_departamentos"></div>
+                </div>
 
+             
+           </div>   
+         
+           <div class="area_container"> 
+               <div class="area_titulo"> 
+                  <div class="area_titulo_texto">Marque uma consulta</div>
+                  <div class="area_titulo_barra"></div>
+               </div> 
+               
+             <div class="area_consulta">
+                    <div class="texto_consulta">Abaixo as formas de entrar em contato conosco, marque ja sua consulta.</div> <hr/>
+                    <div class="telefone_consulta">Telefone: 5555-5555</div> <hr/>
+                    <div class="email_consulta">Email: medicenter@hotmail.com</div> <hr/>
+            <div class="chat_consulta">Chat: <a href=""> fale conosco via chat</a></div> <hr/>
+                </div>
+           </div>   
+        </aside>
+     </div>
+  </section>
+<!--adicionamos abaixo na class container a flexColumn tambem para chamar no css e deixar os elementos em colunas,pois o rodape estava ficando na mesma linha que os titulos d rodape em zul:-->
+<footer>
+   <div class="container flexColumn">
+     
+     <div class="footer_menu">
+          <div class="fm_1">
+              <h3>Plano de saúde</h3>
+              <p>No medicenter temos atendimento individual &ensp;
+                <img src="https://icongr.am/octicons/arrow-right.svg?size=16&color=currentColor"/>
+              </p>
+          </div>
+       
+          <div class="fm_2">
+              <h3>Registros médicos</h3>
+              <p>Seu histórico médico &ensp;
+                 <img src="https://icongr.am/octicons/arrow-right.svg?size=16&color=currentColor" />
+              </p>
+          </div>
+         
+          <div class="fm_3" >
+             <h3>Pagamento de contas online</h3>
+             <p> Pagamento online &ensp;
+                <img src="https://icongr.am/octicons/arrow-right.svg?size=16&color=currentColor" />
+             </p>
+          </div>
+       </div>
+
+       <div class="footer_area">
+          
+              <div class="footer_areaitem">
+                 
+                  <div class="area_titulo"> 
+                        <div class="area_titulo_texto">Clínica Medicenter</div>
+                        <div class="area_titulo_barra"></div>
+                  </div> 
+
+                         <div class="footer_texto">Abaixo segue nosso endereço, e formas de entrar em contato conosco:</div>
+                  <div class="footer_endereco_contato">
+                       
+                       <div class="footer_endereco">
+                             <p>MediCenter Clinic</p>
+                             <p>33 Farlane Street</p>
+                             <p>Keilor East</p>
+                             <p>VIC 3033, Australia</p>
+                             <img src="https://icongr.am/entypo/facebook.svg?size=25&color=currentColor" />
+                             <img src="https://icongr.am/entypo/twitter.svg?size=25&color=currentColor" />
+                             <img src="https://icongr.am/entypo/old-phone.svg?size=25&color=currentColor" />
+                             <img src="https://icongr.am/entypo/mail.svg?size=25&color=currentColor" />
+                       </div>
+                       <div class="footer_contato">
+                             <p>5555-5555</p> 
+                             <p>1234-5678</p> 
+                             <a href=""><p>medicenter@mail.com</p></a>
+                       </div>
+                             
+                 </div>
+              </div>
+          
+         
+         <div class="footer_areaitem">
+               
+                <div class="area_titulo"> 
+                    <div class="area_titulo_texto">Ultimas postagens</div>
+                    <div class="area_titulo_barra"></div>
+                </div>
+                <div class="footer_postagem">
+                        <div>
+                            <img src="https://icongr.am/octicons/arrow-right.svg?size=16&color=currentColor"/> 
+                    &ensp; <a href="">Acreditamos que a forma com que atendemos...</a>
+                             <div class="footer_data">20 MAI 22</div>
+                        </div>
+                       
+                        <div>
+                             <img src="https://icongr.am/octicons/arrow-right.svg?size=16&color=currentColor"/>
+                      &ensp; <a href="">As mulheres tem a cada dia provado seu valor,apesar...</a>
+                             <div class="footer_data">22 MAI 22</div>
+                        </div>
+                        
+                        <div>
+                             <img src="https://icongr.am/octicons/arrow-right.svg?size=16&color=currentColor"/>
+                      &ensp; <a href="">Sem perder o lado humano,cuidamos de cada...</a>
+                             <div class="footer_data">23 MAI 22</div>
+                        </div>
+                        
+                        <div>
+                             <img src="https://icongr.am/octicons/arrow-right.svg?size=16&color=currentColor"/>
+                             &ensp; <a href="">A chance de o bebê nascer vivo e com saúde...</a>
+                        <div class="footer_data">24 MAI 22</div>
+                        </div>
+                </div>
+          </div>
+          
+          <div class="footer_areaitem">
+                <div class="area_titulo"> 
+                    <div class="area_titulo_texto">Ultimos Tweets
+                    </div>
+                    <div class="area_titulo_barra"></div>
+                </div>
+             
+            <div class="footer_tweets">
+                 
+                  <div class="tweets_itens">
+                  <img src="https://icongr.am/octicons/arrow-right.svg?size=16&color=currentColor"/>
+                  &ensp; <a href="">Essa semana se inicia nosso  programa de concientização feminino em relação ao cancer de mama.</a>
+                  </div>
+                  <div class="footer_data">24 MAI 22</div>
+               
+               
+                 <div class="tweets_itens">
+                 <img src="https://icongr.am/octicons/arrow-right.svg?size=16&color=currentColor"/> 
+                   &ensp; <a href="">nesse inverno se cuide,se alimente bem,e caso precise estamos aqui para dar todo apoio e cuidado que sua familia merece.                   </a>
+                 </div>
+               <div class="footer_data">24 MAI 22</div>
+               
+                
+              <div class="tweets_itens">
+                 <img src="https://icongr.am/octicons/arrow-right.svg?size=16&color=currentColor"/>
+                &ensp; <a href="">se encerra essa semana nossa campanha de vacinação contra grip,venha que ainda dar tempo de se imunizar.</a>
+                 </div>
+                <div class="footer_data">24 MAI 22</div>
+              
+             </div>
+          </div>
+       </div>
+              
+            <div class="footer_copyright">
+         copyright - este é um projeto que desenvolvi para treinar,me inspirei no projeto MediCenter by QuanticaLabs.
+            </div>
+     
+   </div>
+</footer>
 
 
   

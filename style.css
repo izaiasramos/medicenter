@@ -207,6 +207,217 @@ flex-direction:column;
 }
 
 
+/* Abaixo comecaremos a estilizar o conteudo geral,localizado abaixo do banner e acima do rodapé
+*/
 
+#geral {
+  display:flex;
+  justify-content:center;
+}
 
+/* noticias: */
+#geral section {
+  flex:2;
+}
+
+/* area departamentos e area marque uma consulta:  */
+#geral aside {
+  flex:1;
+}
+
+.area_titulo {
+  margin-top:30px;
+  margin-bottom:20px;
+}
+.area_titulo_texto{
+  color:#000000;
+  font-size:21px;
+  font-weight: bold;
+}
+
+/* div que se tornou barra azul abaixo do titulo: */
+.area_titulo_barra {
+  width:60px;
+  height:2px;
+  background-color: #36a9e1;
+  margin-top: 10px;
+} 
+
+/*  display:flex; - para as noticias ficarem uma ao lado da outra.
+ flex-wrap:wrap; - para quebrarem linha,pois estavam ficando as 4 na mesma linha. */
+.flex {
+  display:flex;
+  flex-wrap:wrap;
+}
+
+/*  flex:1; - para possuirem o mesmo tamanho.
+  min-width:300px; - menor tamanho possivel para que fiquem duas por linha,so funcionou com o min-width. */
+article {
+  flex:1;
+  min-width:300px;
+  margin-right:20px;
+}
+/* text-decoration:none; - tirando a linha sublinhada que ficou no conteudo de noticia por causa da tag a. */
+article a {
+  text-decoration:none;
+}
+/* deixando a data e o numero de comentarios um ao lado do outro: */
+article .nova_data {
+  display:flex;
+}
+
+article .nova_postagem {
+  background-color: #2b4c99;
+  color: #ffffff;
+  font-size:12px;
+  padding:10px;
+  margin-right:2px;
+}
+article .nova_comentario {
+    background-color: #39aae1;
+    color: #ffffff;
+    font-size:12px;
+    padding:10px;
+}
+
+/* afastando a imagem da data: */
+article .nova_imagem {
+  margin-top:30px;
+}
+
+/* tamanho da imagem: */
+article .nova_imagem img {
+  width:100%;
+  height:auto;
+}
+
+/* titulo abaixo da imagem: */
+article .nova_titulo {
+  margin-top:25px;
+  margin-bottom:25px;
+  color: #000000;
+  font-size:25px;
+}
+
+/* texto do resumo da noticia:
+line-height:20px; - esta definindo o espaçamento entre as linhas. */
+article .nova_resumo {
+  color:#5c5c5c;
+  line-height:20px;
+  font-size:14px;
+  margin-bottom:30px;
+}
+
+/* Abaixo comecaremos a estilizar e configurar nossa aside,area lateral de departamentos e outra abaixo que sera area para marcar consulta:  */
+
+ .flex {
+   display:flex;
+ }
+aside .area_departamentos {
+  display: flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  background-color: #39aae1;
+  margin:7px;
+  width:151px;
+  height:150px;
+}
+ aside .area_consulta {
+/*    padding-top:38px; */
+   line-height:30px;
+ }
+
+/*abaixo começaremos a estilizar o RODAPE/FOOTER:*/
+footer {
+  background-color: #1e1e1e;
+  display:flex;
+  justify-content:center;
+}
+.footer_menu{
+  display:flex;
+  flex:1;
+}
+ .fm_1, .fm_2, .fm_3 {
+   flex:1;
+   color: #ffffff;
+   padding:15px;
+   line-height:5px;
+ }
+
+.fm_1{
+  background-color: #39aae1;
+}
+.fm_2{
+  background-color: #0079c7;
+}
+.fm_3{
+  background-color: #2b4c99;
+}
+footer p {
+  font-size:13px;
+}
+/*abaixo comecamos a estilizar o rodape em si:
+no container responsavel por todo o rodape,tivemos que colocar uma class flexColumn e aqui no css abaixo chamamos essa class e colocamos esse container em coluna,pois o conteudo do rodape estava ficando em linha row lunto com o titulo azul do rodape,ai para que viesse descer tivemos que colocar em column*/
+.flexColumn {
+  flex-direction:column;
+}
+.footer_area {
+display:flex;
+  color: #ffffff;
+}
+/*3 titulos com background azul. deixando os itens espaçados em seus devidos lugares:*/
+ .footer_areaitem{
+  flex:1;
+  font-size:12px;
+   margin-right:10px;
+}
+
+footer .area_titulo_texto {
+  color:white;
+}
+/* texto do primeiro quadrado "clinica medicenter" em cinza: */
+footer .footer_texto{
+  color: #5c5c5c;
+  margin-bottom:15px;
+}
+/* primeiro quadrado sobre endereço e contato: */
+footer .footer_endereco_contato{
+  display:flex;
+  justify-content:space-around;
+  flex:1;
+   color: #5c5c5c;
+}
+
+footer .footer_postagem{
+  line-height:20px;
+  color: #5c5c5c;
+}
+
+ .footer_data{
+   font-size:10px;
+   color:#39aae1;
+   margin-left:30px;
+   margin-bottom:15px;
+ }
+ .footer_tweets {
+  display: grid; 
+  color: #9d9d9d;
+}
+.tweets_itens {
+  line-height:20px;
+}
+footer a {
+  text-decoration:none;
+  color:#9d9d9d;
+}
+
+/* abaixo estilizaremos a ultima parte do footer,que é os direitos autorais: */
+footer .footer_copyright {  
+  border-top: 1px solid #2c2c2c;
+  height:40px;
+  line-height:40px;
+  color: #5c5c5c;
+  font-size:12px;
+  margin-top:10px;
+}
 
